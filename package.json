@@ -1,0 +1,24 @@
+{
+  "name": "simple-state",
+  "version": "0.0.0",
+  "description": "Simple state appender to existing MongoDB entities",
+  "main": "state.js",
+  "private": true,
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcugno/simple-state"
+  },
+  "author": "Jared Cugno",
+  "dependencies": {
+    "mongoskin": "~0.6.1"
+  },
+  "devDependencies": {
+    "precommit-hook": "~0.3.6",
+    "chai": "~1.8.0",
+    "mocha": "~1.15.1",
+    "sinon": "~1.7.3"
+  }
+}
