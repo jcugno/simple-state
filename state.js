@@ -7,6 +7,10 @@ function State(opts) {
   this.assetId = opts.assetId;
   this.collectionName = opts.collectionName;
 
+  if(typeof this.assetId === 'string') {
+    this.assetId = this.db.ObjectID.createFromHexString(this.assetId);
+  }
+
   this.collection = this.db.collection(this.collectionName);
 }
 
